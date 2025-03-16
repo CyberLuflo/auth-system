@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bienvenido, <span id="user-name"></span></h2>
+        <p>Este es tu panel de usuario.</p>
+        <a href="../control/logout.php">Cerrar sesión</a>
+    </div>
+    <script>
+        // Mostrar el nombre del usuario
+        document.getElementById('user-name').textContent = localStorage.getItem('user_name');
+    </script>
+</body>
+</html>
